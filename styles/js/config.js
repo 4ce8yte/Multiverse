@@ -15,9 +15,9 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Chromaurora",
-  url: "https://chromaurora.com",
-  description: `A closed alternate universe created by NullSeekerAce`
+  title: "OutsideTheMultiverse",
+  url: "https://var-masterlist.netlify.app",
+  description: `Masterlist for vars - species made by Detox`
 }
 
 /* ==================================================================== */
