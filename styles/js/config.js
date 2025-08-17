@@ -26,14 +26,12 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1pbEyDIZkHO-A9Ywx63EjjZKk2QiqfI1N0wsOHw5kNVo",
+  id: "1-EcNXDyTyrrpTEJ9k6vrXEck1SeN2C49ODBPSt70DS",
 
   pages: {
     masterlist:    "masterlist",
-    masterlistLog: "masterlist log",
     imageGallery:  "image gallery",
     inventory:     "inventory",
-    inventoryLog:  "inventory log",
     items:         "items",
     traits:        "traits",
     prompts:       "prompts",
@@ -44,10 +42,10 @@ charadex.sheet = {
   options: {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
-    rarity: ['All', 'Basic', 'Unusual', 'RareBorne', 'Mythroot', 'Mutation'],
-    species: ['All', 'Astrofae', 'Stargazer', 'Lumiflier'],
-    itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Box', 'Misc'],
-    traitTypes: ['All', 'Antennas', 'Container', 'Core', 'Limbs', 'Tails', 'Wings', 'Mutation'],
+    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Legandary', 'Mutation', 'God', 'Negative', 'Unknown'],
+    species: ['All', 'Light', 'Void', 'Galaxy', 'Star', 'Nebula', 'Astroid', 'Ara', 'Leto', 'Noel', 'Snow'],
+    itemTypes: ['All', 'Currency', 'Box', 'Misc'],
+    traitTypes: ['All', 'Nose', 'Teeth', 'Pupils', 'Eye Shapes', 'Manes', 'Floof', 'Antennae', 'Ears', 'Horns', 'Paws', 'Wings', 'Tail'],
     giftArt: ['Yes', 'Ask First', 'No'],
     giftFics: ['Yes', 'Ask First', 'No']
 
@@ -404,30 +402,6 @@ charadex.page.masterlist = {
 
   relatedData: {
 
-    [charadex.sheet.pages.masterlistLog]: {
-
-      sheetPage: charadex.sheet.pages.masterlistLog,
-      primaryProperty: 'id',
-      relatedProperty: 'id',
-      dexSelector: 'log',
-      profileProperty: 'design',
-      profileToggle: false,
-
-      sort: {
-        toggle: true,
-        key: "timestamp",
-        order: "desc",
-        parameters: []
-      },
-
-      pagination: {
-        toggle: true,
-        bottomToggle: false,
-        amount: 12,
-      },
-
-    },
-
     [charadex.sheet.pages.imageGallery]: {
 
       ... charadex.page.imageGallery,
@@ -506,24 +480,6 @@ charadex.page.inventory = {
 
   // Related Data
   relatedData: {
-
-    [charadex.sheet.pages.inventoryLog]: {
-
-      sheetPage: charadex.sheet.pages.inventoryLog,
-      sitePage: 'inventories',
-      primaryProperty: 'username',
-      relatedProperty: 'username',
-      dexSelector: 'log',
-      profileProperty: 'id',
-      profileToggle: false,
-
-      pagination: {
-        toggle: true,
-        bottomToggle: false,
-        amount: 12,
-      },
-
-    },
     
 
     [charadex.sheet.pages.masterlist]: {
