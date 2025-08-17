@@ -26,7 +26,7 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1-EcNXDyTyrrpTEJ9k6vrXEck1SeN2C49ODBPSt70DS",
+  id: "1-EcNXDyTyrrpTEJ9k6vrXEck1SeN2C49ODBPSt70DSg",
 
   pages: {
     masterlist:    "masterlist",
