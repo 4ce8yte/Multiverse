@@ -16,7 +16,7 @@ body {
   /* Primary Color
   ================================================================ */
   --cd-primary-color: #000012;
-  --cd-primary-text-color: #e7a94c;
+  --cd-primary-text-color: #CA994F;
 
   /* ============================================================= */
   /* Secondary Color
@@ -28,8 +28,8 @@ body {
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color: #000012;
-  --cd-content-background-color: #e7a94c;
-  --cd-faded-content-background-color: rgba(0, 0, 18,.6);
+  --cd-content-background-color: #CA994F;
+  --cd-faded-content-background-color: #CA994F;
   --cd-faded-background-color: #b18355;
 
   /* Background Extras */
@@ -39,7 +39,7 @@ body {
   /* Text
   ================================================================ */
   --cd-body-text-color: #000012;
-  --cd-faded-text-color: #e7a94c;
+  --cd-faded-text-color: #CA994F;
 
   /* ============================================================= */
   /* Borders
