@@ -15,22 +15,22 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color: #0b0c4e;
-  --cd-primary-text-color: #ffeeac;
+  --cd-primary-color: #000012;
+  --cd-primary-text-color: #e7a94c;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color: #03256e;
-  --cd-secondary-text-color: #ffeeac;
+  --cd-secondary-color: #b18355;
+  --cd-secondary-text-color: #000012;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #03256e;
-  --cd-content-background-color: #919ad9;
-  --cd-faded-content-background-color: rgba(145,154,217,0.8);
-  --cd-faded-background-color: #96dfbf;
+  --cd-body-background-color: #000012;
+  --cd-content-background-color: #e7a94c;
+  --cd-faded-content-background-color: rgba(0, 0, 18,.6);
+  --cd-faded-background-color: #b18355;
 
   /* Background Extras */
   --cd-body-background-image: url(/assets/Background.png);
@@ -38,8 +38,8 @@ body {
   /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color: #0b0c4e;
-  --cd-faded-text-color: #ffeeac;
+  --cd-body-text-color: #000012;
+  --cd-faded-text-color: #e7a94c;
 
   /* ============================================================= */
   /* Borders
@@ -126,7 +126,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color: #0b0c4e;
+  --cd-link-text-color: #000012;
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
@@ -606,6 +606,10 @@ img {
 
 .bg-faded .d-flex .text-muted {
   color: var(--cd-body-background-color) !important
+}
+.cd-hero-title {
+  font-size: 4rem;
+  text-align: center;
 }
 
 
