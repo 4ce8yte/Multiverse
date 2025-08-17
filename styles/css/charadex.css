@@ -22,15 +22,15 @@ body {
   /* Secondary Color
   ================================================================ */
   --cd-secondary-color: #b18355;
-  --cd-secondary-text-color: #000012;
+  --cd-secondary-text-color: #f3d6f1;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color: #000012;
-  --cd-content-background-color: #CA994F;
-  --cd-faded-content-background-color: #CA994F;
-  --cd-faded-background-color: #b18355;
+  --cd-content-background-color: #b18355;
+  --cd-faded-content-background-color: rgba(177, 131, 85,.8);
+  --cd-faded-background-color: rgba(202, 153, 79,.8);
 
   /* Background Extras */
   --cd-body-background-image: url(/assets/Background.png);
@@ -38,8 +38,8 @@ body {
   /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color: #000012;
-  --cd-faded-text-color: #CA994F;
+  --cd-body-text-color: #f3d6f1;
+  --cd-faded-text-color: rgba(243, 214, 241, .8);
 
   /* ============================================================= */
   /* Borders
@@ -70,21 +70,26 @@ body {
   /* Rarities
   ================================================================ */
 
-  --cd-rarity-common-bg: #D9CEE5;
-  --cd-rarity-common-txt: #303030;
+  --cd-rarity-common-bg: #46FF5E;
+  --cd-rarity-common-txt: var(--cd-primary-color);
 
-  --cd-rarity-uncommon-bg: #B37FB3;
+  --cd-rarity-uncommon-bg: #FFD136;
   --cd-rarity-uncommon-txt: var(--cd-rarity-common-txt);
   
-  --cd-rarity-rare-bg: #9540C0;
-  --cd-rarity-rare-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-rare-bg: #FF4343;
+  --cd-rarity-rare-txt: var(--cd-body-text-color);
 
-  --cd-rarity-veryrare-bg: #943875;
-  --cd-rarity-veryrare-txt: var(--cd-rarity-common-txt);
-
-  /* Legendary & Mythic */
-  --cd-rarity-legendary-bg: #70B8DC;
+  --cd-rarity-legendary-bg: #FF81EA;
   --cd-rarity-legendary-txt: var(--cd-rarity-common-txt);
+
+  --cd-rarity-god-bg: #9263EA;
+  --cd-rarity-god-txt: var(--cd-rarity-rare-txt);
+  
+  --cd-rarity-mutation-bg: #1a52a5;
+  --cd-rarity-mutation-txt: var(--cd-rarity-rare-txt);
+  
+  --cd-rarity-negative-bg: #424447;
+  --cd-rarity-negative-txt: var(--cd-rarity-rare-txt);
 
 
   /* ============================================================= */
@@ -783,13 +788,22 @@ p:last-child {
   color: var(--cd-rarity-rare-txt);
 }
 
-.badge-veryrare {
-  background-color: var(--cd-rarity-veryrare-bg);
-  color: var(--cd-rarity-veryrare-txt);
-}
-
-.badge-legendary,
-.badge-mythic {
+.badge-legendary {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
+}
+
+.badge-god {
+  background-color: var(--cd-rarity-god-bg);
+  color: var(--cd-rarity-god-txt);
+}
+
+.badge-mutation {
+  background-color: var(--cd-rarity-mutation-bg);
+  color: var(--cd-rarity-mutation-txt);
+}
+
+.badge-negative, .badge-unknown {
+  background-color: var(--cd-rarity-negative-bg);
+  color: var(--cd-rarity-negative-txt);
 }
